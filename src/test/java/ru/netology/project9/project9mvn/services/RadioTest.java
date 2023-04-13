@@ -59,6 +59,7 @@ public class RadioTest {
         int actual = radio.getNumberStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void unrealNumberStationMinus1() {
         Radio radio = new Radio();
@@ -113,6 +114,7 @@ public class RadioTest {
         int actual = radio.getLevelVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void unrealLevelVolumeMinus5() {
         Radio radio = new Radio();
@@ -169,6 +171,7 @@ public class RadioTest {
         int actual = radio.getNumberStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseMiddleNumberStation5() {
         Radio radio = new Radio();
@@ -179,6 +182,7 @@ public class RadioTest {
         int actual = radio.getNumberStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceLatestNumberStation9() {
         Radio radio = new Radio();
@@ -189,6 +193,7 @@ public class RadioTest {
         int actual = radio.getNumberStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseLatestNumberStation9() {
         Radio radio = new Radio();
@@ -210,6 +215,7 @@ public class RadioTest {
         int actual = radio.getNumberStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceNullNumberStation0() {
         Radio radio = new Radio();
@@ -220,7 +226,8 @@ public class RadioTest {
         int actual = radio.getNumberStation();
         Assertions.assertEquals(expected, actual);
     }
-// Уменьшение/ увеличение громкости
+
+    // Уменьшение/ увеличение громкости
     @Test
     public void reduceLevelVolumeInTheMiddle50() {
         Radio radio = new Radio();
@@ -230,6 +237,7 @@ public class RadioTest {
         int actual = radio.getLevelVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseLevelVolumeInTheMiddle50() {
         Radio radio = new Radio();
@@ -239,6 +247,7 @@ public class RadioTest {
         int actual = radio.getLevelVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceLevelVolumeInNull0() {
         Radio radio = new Radio();
@@ -248,6 +257,7 @@ public class RadioTest {
         int actual = radio.getLevelVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseLevelVolumeInNull0() {
         Radio radio = new Radio();
@@ -257,6 +267,7 @@ public class RadioTest {
         int actual = radio.getLevelVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceLevelVolumeInOneHundred100() {
         Radio radio = new Radio();
@@ -266,6 +277,7 @@ public class RadioTest {
         int actual = radio.getLevelVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseLevelVolumeInOneHundred100() {
         Radio radio = new Radio();
